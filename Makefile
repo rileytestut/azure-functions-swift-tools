@@ -15,7 +15,7 @@ install: build
 	install ".build/release/swiftfunc" "$(bindir)"
 
     ifeq ($(uname_str),Linux)
-		install ".build/x86_64-unknown-linux-gnu/release/libSwiftPM.so" "$(linux_lib_dir)"
+		install ".build/aarch64-unknown-linux-gnu/release/libSwiftPM.so" "$(linux_lib_dir)"
     endif
     ifeq ($(uname_str),Darwin)
 		install ".build/x86_64-apple-macosx/release/libSwiftPM.dylib" "$(libdir)"
