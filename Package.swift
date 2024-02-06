@@ -5,11 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "swiftfunc",
+    products: [
+        .executable(name: "swiftfunc", targets: ["swiftfunc"])
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/JohnSundell/Files", from: "4.0.0"),
         .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.13.1"),
-        .package(url: "https://github.com/apple/swift-package-manager.git", .exact("0.4.0")),
+        .package(url: "https://github.com/rileytestut/swift-package-manager.git", .branchItem("azure")),
         .package(url: "https://github.com/onevcat/Rainbow", from: "3.0.0"),
     ],
     targets: [
